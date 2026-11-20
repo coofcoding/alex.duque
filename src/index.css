@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* ─── Theme tokens ─────────────────────────────────────────── */
+@theme {
+  --color-bg: #1c1c1c;
+  --color-acid: #b6f500;
+  --color-text: #d7e2ea;
+  --color-text-dim: #9aa3b0;
+  --color-black: #1c1c1c;
+}
+
+/* ─── Global reset ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  background: #1c1c1c;
+  overflow-x: clip;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: #1c1c1c;
+  color: var(--color-text);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Hero heading gradient (acid green) ───────────────────── */
+.hero-heading {
+  background: linear-gradient(180deg, #b6f500 0%, #d8ff4d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ─── Scrollbar ────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #1c1c1c; }
+::-webkit-scrollbar-thumb { background: #b6f500; border-radius: 99px; }
